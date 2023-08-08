@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Duru Sans', sans-serif;
+ 
+ } 
+
+ .gradient {
+background: rgb(58, 99,144);
+background: linear-gradient(
+  90deg,
+  rgba(58, 99, 144, 1) 8%,
+  rgba(90, 140, 182, 1) 41%,
+  rgba(27, 55, 125, 1) 88%
+);
+}
+
+.gradient2 {
+  background: rgb(43,58,84);
+background: linear-gradient(167deg, rgba(43,58,84,1) 0%, rgba(19,23,31,1) 100%);
+}
+
+.gradient3 {
+  background: rgb(39, 128, 167);
+background: linear-gradient(0deg, rgb(30, 109, 143) 0%, rgb(21, 70, 99) 81%);
+}
+
+.gradient4{
+  background: rgb(46,62,75);
+background: linear-gradient(90deg, rgba(46,62,75,1) 0%, rgba(88,102,117,1) 100%);
+}
+
+
+.gradient5{
+  background: rgb(117,176,34);
+background: linear-gradient(270deg, rgba(117,176,34,1) 0%, rgba(88,138,27,1) 100%);
+}
+
+.gradient6{
+  background: rgb(117,176,34);
+background: linear-gradient(270deg, rgba(117,176,34,0) 0%, rgba(46,83,107,1) 60%, rgba(46,83,107,1) 94%);
+}
+
+.gradient7{
+  background: rgb(21,32,44);
+  background: linear-gradient(122deg, rgba(21,32,44,1) 25%, rgba(14,21,29,1) 73%);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+.fade-in{
+  animation: fadeIn infinite alternate ease 8s ;
+  animation-delay: 8s;
+
+}
+
+
+
+.fade-out{
+  animation: fadeOut infinite alternate ease 8s ;
+  animation-delay: 8s;
+
+}
+
+
+/* Slide */
+.slider-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.slide {
+  text-align: center;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* EDIVALDO CSS */
+
+
+
+.bg{
+  background-image: url(./assets/loginbg.jpg);
+}
+
+.logo{
+  display: flex;
+  
+  align-items: center;
+}
+.logosteam{
+  width: 50px;
+  height: 50px;
+  
+}
+
+/* Lista Principal de Navegação */
+.menuprincipal{
+  margin-left: 70px;
+}
+.principalul{
+  display: flex;
+  list-style-type: none;
+
+}
+.principalul>li{
+  margin: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #a09f9f;
+}
+.principalul>li:hover{
+  color: white;
+  cursor: pointer;
+}
+#loja{
+  color: #26a4fd;
+  border-bottom: 2.5px solid #26a4fd;
+  font-weight: bolder;
+}
+/* Área de acesso*/
+.acesso{
+  display: flex;
+  height: 100%;
+  margin-left: 40px;   
+}
+.download{
+  display: flex;
+  background-color: #5c7e10;
+  height: 20px;
+  align-items: center;
+  font-size: 12px;
+  padding: 0 8px;
+}
+.icondownload{
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+a{
+  text-decoration: none;
+
+}
+.sessao{
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  font-size: 12px;
+  height: 20px;
+}
+/*CORPO DA PÁGINA*/
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.principalbox{
+  display: flex;
+  width: 800px;
+  background-color: #171a21;
+  padding: 20px;
+}
+.isessao{
+  color: #26a4fd;
+  margin-bottom: 2px;
+}
+#insessao{
+  background-color: #353434;
+}
+.isenha{
+  color: #797777;
+  margin-bottom: 2px;
+}
+#login{
+  margin-bottom: 10px;
+}
+#senha{
+  margin-bottom: 10px;
+}
+
+#login, #senha{
+  background-color: #353434;
+  border: none;
+  height: 34px;
+  width: 500px;
+}
+
+#lem{
+  color: #797777;
+  font-size: 12px;
+}
+.inflogar{
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+.qrcode{
+  
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+}
+.imgqr{
+  height: 200px;
+  margin-bottom: 10px;
+
+}
+.botao{
+  width: 250px;
+  background: linear-gradient(to right, #06BFFF, #2C74FF );
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 15px 0px;
+  margin-bottom: 80px;
+}
+.linkisessao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.check{
+  margin-bottom: 20px;
+}
+.pqr{
+  color: #26a4fd;
+  font-size: 11px;
+  font-weight: bolder;
+  margin-bottom: 3px;
+}
+.nsessao{
+  color: #797777;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.nsessao:hover{
+  color: #acaaaa;
+}
+.subqr{
+  text-align: center;
+  width: 190px;
+  font-size: 12px;
+  color: #797777;
+}
+.linkfim{
+  text-decoration: underline;
+  color: #797777;
+}
+
+
+
+
+
+/* FIM EDIVALDO CSS */
+
+
+
+
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+
+  
+  to{
+    opacity: 1;
+  }
+
+}
+
+
+@keyframes fadeOut{
+  from{
+    opacity: 1;
+  }
+
+  to{
+    opacity: 0;
+  }
+
+}
+
+
+
+
+
+
+
